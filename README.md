@@ -1,7 +1,7 @@
 Role Name
 ========
 
-ntp
+sshd
 
 Role Variables
 --------------
