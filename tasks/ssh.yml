@@ -14,10 +14,13 @@
             owner=root
             group=root
             mode=0600
+  become: true
   notify:
    - gen ssh keys
    - restart ssh
 
+# Ignore errors on this as it isn't reliable
 - name: Attempt to remove pub key from local known_hosts
   local_action: command  ssh-keygen -f "$HOME/.ssh/known_hosts" -R hostname
-  sudo: no
+  become: false
+  ignore_errors: true
