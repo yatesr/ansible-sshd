@@ -1,27 +1,25 @@
 ---
 galaxy_info:
   author: Ryan Yates
-  description: Role for managing ntp.
+  description: Role for managing ssh.
   company:
   license: license (Apache 2.0)
-  min_ansible_version: 1.5
+  min_ansible_version: 2.2
   platforms:
   - name: Ubuntu
     versions:
     - precise
     - trusty
+    - xenial
   - name: Debian
     versions:
-    - squeeze
     - wheezy
+    - jessie
+    - stretch
   - name: EL
     versions:
     - 6
     - 7
-  - name: Fedora
-    versions:
-    - 19
-    - 20
   categories:
   - system
 dependencies: []
