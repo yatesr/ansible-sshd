@@ -1,0 +1,3 @@
+---
+ssh_service_name: ssh
+sshd_config_file: sshd_config-modern.j2
